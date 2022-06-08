@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="main">
+        <div id="left">
+            <div class="logo">
+                <div id="content">
+                    <img src="resources/odin-lined.png" alt="odin-logo">
+                    <h1>SAMIR</h1>
+                </div>
+            </div>
+            <div id="credits">
+                <p>Photo by <span><a target="_blank" href="https://unsplash.com/@antoinepeltier">Antoine Peltier </a></span>on <span><a target="_blank" href="https://unsplash.com/">Unsplash.com</a>.</span></p>
+            </div>
+        </div>
+        <div id="right">
+            <div id="right-1">
+                <p>This is not a real online service! Lorem ipsum dolor sit amet consectetur, 
+                    adipisicing elit. Necessitatibus, commodi! Sign up <i>now</i> to get started.</p>
+                <p>You know you want to.</p>
+            </div>
+            <div id="right-2">
+                <hr style="margin-bottom: 2em;">
+                <form id ="info" action="#">
+                    <fieldset>
+                        <legend style="padding:0 5px">Registration</legend>
+                        <div class="child">
+                            <label for="fname">First Name:</label>
+                            <input type="text" name="firstname" id="fname">
+                        </div>
+                        <div class="child">
+                            <label for="lname">Last Name:</label>
+                            <input type="text" name="lastname" id="lname">
+                        </div>
+                        <div class="child">
+                            <label for="email">Email:</label>
+                            <input type="email" name="mail" id="email">
+                        </div>
+                        <div class="child">
+                            <label for="pnumber">Email:</label>
+                            <input type="text" name="phonenumber" id="pnumber" maxlength="12" minlength="12">
+                        </div>
+                        <div class="child">
+                            <label for="pword">Password:</label>
+                            <input type="password" name="password" id="password">
+                        </div>
+                        <div class="child">
+                            <label for="cpword">Confirm Password:</label>
+                            <input type="password" name="password" id="cpassword">
+                        </div>
+                        
+                    </fieldset>
+                    <hr class="mar">
+                    <div id="btn">
+                        <label for="register">
+                            <input type="button" id="register"value="Register">
+                        </label>
+                    </div>
+                </form>
+                <div id="asked"><p>Already <span><a href="">have an Account?</a></span> </p></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

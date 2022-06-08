@@ -1,0 +1,132 @@
+:root{
+    --bg-color:rgb(36, 36, 36);
+    --color:white;
+    --padding:10px 0px;
+    --color-orange:rgb(221, 107, 40);
+    --fsize:17px;
+  
+
+}
+@font-face {
+    font-family: myFont;
+    src: url(resources/Norse-Bold.otf);
+    font-family: myFont2;
+    src: url(resources/Brutel-SemiBold.otf);
+}
+
+body{
+    font-family:myFont2;
+    font-size: var(--fsize);
+}
+#main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+
+}
+.logo,#credits,#content{
+    display: flex;
+    flex-flow: row wrap;
+
+}
+#left,.child{
+    display: flex;
+    flex-flow: column nowrap;
+}
+#left{
+    flex: 1.2;
+    background-image: url(resources/antoine-peltier-Dw3DNZbu8ko-unsplash.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    
+}
+.logo{
+    width: 100%;
+    align-items: center;
+    flex: 3;
+    
+}
+.logo img{
+    height: 8vh;
+
+}
+.logo h1{
+    color: var(--color-orange);
+    font-size: 50px;
+    font-family: myFont;
+    color: var(--color);
+}
+#content{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding:var(--padding);
+    gap: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+#credits{
+    flex: 1;
+    padding:var(--padding) ;
+    align-items: flex-end;
+    color: var(--color);
+}
+
+#right{
+    width: auto;
+    flex: 2;
+    background-color: var(--bg-color);
+    color: var(--color);
+    padding: 5%;
+   
+}
+#right>div{
+    width: auto;
+    margin: 1em 0;
+}
+#right-1 p{
+    line-height: 1.6;
+}
+#info fieldset{
+    border: 2px solid var(--color-orange);
+    padding: 20px;
+    gap: 40px;
+    display: flex;
+    flex-flow: row wrap;
+}
+.child{
+    width: 25%;
+    flex:40%; 
+}
+#btn,.mar{
+    margin-top: 2em;
+    margin-bottom: 2.3em;
+}
+#register{
+    color: var(--color);
+    background-color: var(--color-orange);
+    border: none;
+    padding: 1em;
+    font-family: myFont2;
+    font-size: var(--fsize);
+}
+
+@media screen and (max-width: 618px){
+    #main,fieldset{
+        flex-direction: column;
+        flex-wrap: nowrap;
+        width: auto;
+    }
+    #right,#left{
+        min-width: 248px;
+    }
+    .child{
+        width: auto;
+    }
+    #left{
+        padding-top: 2em;
+        height:30em;
+    }
+}
