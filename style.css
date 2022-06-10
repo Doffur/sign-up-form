@@ -101,19 +101,35 @@ body{
     flex:40%; 
 }
 #btn,.mar{
-    margin-top: 2em;
-    margin-bottom: 2.3em;
+    margin-top: 1em;
+    margin-bottom: 1em;
 }
 #register{
     color: var(--color);
     background-color: var(--color-orange);
     border: none;
     padding: 1em;
+    border-radius: 5px;
     font-family: myFont2;
     font-size: var(--fsize);
+} 
+#register:hover{
+
+    background-color: rgb(255, 102, 0);
+}
+a{
+    text-decoration: none;
+    color: rgb(137, 253, 42);
+}
+input{
+   background-color: rgb(44, 43, 43);;
+   border: 1px solid #515152;
+   border-radius: 3px;
+   color: aliceblue;
+   font-size: var(--fsize);
 }
 
-@media screen and (max-width: 618px){
+@media screen and (max-width: 1008px){
     #main,fieldset{
         flex-direction: column;
         flex-wrap: nowrap;

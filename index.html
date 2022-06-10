@@ -18,7 +18,7 @@
                 </div>
             </div>
             <div id="credits">
-                <p>Photo by <span><a target="_blank" href="https://unsplash.com/@antoinepeltier">Antoine Peltier </a></span>on <span><a target="_blank" href="https://unsplash.com/">Unsplash.com</a>.</span></p>
+                <p>Photo by <span><a target="_self" href="https://unsplash.com/@antoinepeltier">Antoine Peltier </a></span>on <span><a target="_self" href="https://unsplash.com/">Unsplash.com</a>.</span></p>
             </div>
         </div>
         <div id="right">
@@ -42,30 +42,29 @@
                         </div>
                         <div class="child">
                             <label for="email">Email:</label>
-                            <input type="email" name="mail" id="email">
+                            <input type="email" name="mail" id="email" required>
                         </div>
                         <div class="child">
-                            <label for="pnumber">Email:</label>
+                            <label for="pnumber">Phone number:</label>
                             <input type="text" name="phonenumber" id="pnumber" maxlength="12" minlength="12">
                         </div>
                         <div class="child">
                             <label for="pword">Password:</label>
-                            <input type="password" name="password" id="password">
+                            <input type="password" name="password" id="password" required>
                         </div>
                         <div class="child">
                             <label for="cpword">Confirm Password:</label>
-                            <input type="password" name="password" id="cpassword">
+                            <input type="password" name="password" id="cpassword" required>
                         </div>
                         
                     </fieldset>
-                    <hr class="mar">
-                    <div id="btn">
-                        <label for="register">
-                            <input type="button" id="register"value="Register">
-                        </label>
-                    </div>
+                        <hr class="mar">
+                        <div id="btn">
+                                <button id="register">Create Account</button>
+
+                        </div>
                 </form>
-                <div id="asked"><p>Already <span><a href="">have an Account?</a></span> </p></div>
+                <div id="asked"><p>Already have an Account? <span><a target="_self"href="#">Log in</a></span> </p></div>
             </div>
         </div>
     </div>
